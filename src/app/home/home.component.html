@@ -1,0 +1,20 @@
+<mat-card class="card">
+  <div class="card-blank">
+      <p>No existen datos para mostrar.</p>
+  </div>
+</mat-card>
+<br>
+<mat-card class="footer">
+  <button class="form-search">
+    <mat-form-field appearance="standard" style="margin-left: 5px;">
+        <mat-label>Busqueda por coincidencia</mat-label>
+        <input matInput (keyup)="applyFilter($event)" placeholder="" #input>
+    </mat-form-field>
+    <i class="btn-search fas fa-search"></i>
+    </button>
+    <mat-paginator style="align-items: center;" [pageSizeOptions]="[5, 10]" [pageSize]="10" aria-label=""></mat-paginator>
+    <button class="form-select" type="button" (click)="Listar()">Cargue Masivo</button>
+</mat-card>
+
+
+

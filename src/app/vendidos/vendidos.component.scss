@@ -1,0 +1,412 @@
+/* TABLE */
+.card{
+    font-family: 'Roboto Bold', sans-serif;
+    font-size: 14px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    width: 1500px;
+    height: auto;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    border: 1px solid var(--unnamed-color-c5cbda);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #C5CBDA;
+    border-radius: 6px;
+    opacity: 1;
+}
+table {
+    width: 100%;
+}
+mat-header-cell, mat-cell {
+    justify-content: center;
+}
+.mat-row:nth-child(even){
+    background-color:  #F2F3F7 ;
+}
+.mat-row:nth-child(odd){
+    background-color: #FFFFFF;
+}
+.column{
+    color: var(--unnamed-color-000000);
+    font: normal normal bold 14px/19px Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    background-color: #F2F3F7;
+}
+.data{
+    color: var(--unnamed-color-000000);
+    font: normal normal normal 14px/19px Roboto;
+    letter-spacing: 0px;
+    height: 60px;
+    color: #000000;
+    opacity: 1;
+}
+.btn-prov{
+    width: 101px;
+    height: 32px;
+    margin-top: 4px;
+    color: #FFFFFF;
+    background: #25D366 0% 0% no-repeat padding-box;
+    border: #25D366;
+    border-radius: 16px;
+    opacity: 1;
+}
+.mark{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #E63020;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1px;
+    border: 1px solid #E63020;
+}
+
+ /* FOOTER */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    padding: 2px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    box-shadow: 0px -3px 6px var(--unnamed-color-0000001a);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px -3px 6px #0000001A;
+    opacity: 1;
+}
+.form-search{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 384px;
+    height: 40px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    border: 1px solid var(--unnamed-color-c5cbda);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #C5CBDA;
+    border-radius: 20px;
+    opacity: 1;
+}
+.btn-search{
+    margin-top: 5px;
+    width: 16px;
+    height: 16px;
+    color: var(--unnamed-color-000000);
+    text-align: center;
+    font: normal normal normal 16px/19px Font Awesome 6 Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+.mat-paginator{
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 600px;
+}
+::ng-deep .mat-select-value {
+    width: 12px;
+    height: 15px;
+    color: var(--unnamed-color-000000);
+    text-align: right;
+    font: normal normal normal 14px/19px Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: capitalize;
+    opacity: 1;
+}
+::ng-deep .mat-paginator-range-actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 740px;
+    left: 650px;
+    width: 240px;
+    height: 40px;
+    color: #000000;
+    opacity: 1;
+    border-radius: 30px;
+    border: 1px solid #C5CBDA;
+}
+::ng-deep .mat-paginator-page-size{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    width: 170px;
+    height: 40px;
+    opacity: 1;
+    border-radius: 30px;
+    border: 1px solid #C5CBDA;
+}
+::ng-deep .mat-paginator-page-size-label {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95px;
+    height: 33px;
+    color: var(--unnamed-color-e63020);
+    text-align: left;
+    font: normal normal bold 14px/19px Roboto;
+    letter-spacing: 0px;
+    color: #E63020;
+    background: var(--unnamed-color-fdeae8) 0% 0% no-repeat padding-box;
+    background: #FDEAE8 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 19px;
+}
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-wrapper{
+    width: 40px;
+    margin-top: -14px;
+    color: var(--unnamed-color-000000);
+    text-align: right;
+    font: normal normal normal 14px/19px Roboto;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    opacity: 1;
+    color: #000000;
+}
+.form-select{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 745px;
+    left: 953px;
+    width: 183px;
+    height: 40px;
+    color: #FFFFFF;
+    background: var(--unnamed-color-e63020) 0% 0% no-repeat padding-box;
+    border: 0.5px solid var(--unnamed-color-e63020);
+    background: #E63020 0% 0% no-repeat padding-box;
+    border: 0.5px solid #E63020;
+    border-radius: 50px;
+    opacity: 1;
+    cursor: pointer;
+}
+.delete{
+    color: #E63020;
+}
+
+@media screen and (max-width: 1600px){ 
+    .card{
+        font-size: 12px;
+        width: 1400px;
+        height: auto;
+    }
+    table {
+        width: 100%;
+    }
+    .column{
+        font: normal normal bold 12px/19px Roboto;
+    }
+    .data{
+        font: normal normal normal 12px/19px Roboto;
+        height: 60px;
+    }
+    .btn-prov{
+        width: 80px;
+        height: 22px;
+    }
+    .footer{
+        margin-top: 10px;
+        width: 100%;
+        height: 60px;
+    }
+    .form-search{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 340px;
+        height: 35px;
+    }
+    ::ng-deep .mat-paginator-range-actions{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 740px;
+        left: 650px;
+        width: 200px;
+        height: 35px;
+    }
+    .form-select{
+        top: 745px;
+        left: 953px;
+        width: 200px;
+        height: 35px;
+        font: normal normal medium 14px/9px Roboto;
+    }
+    ::ng-deep .mat-paginator-page-size{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        width: 160px;
+        height: 35px;
+    }
+    ::ng-deep .mat-paginator-range-actions{
+        width: 300px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 1400px){ 
+    .card{
+        font-size: 12px;
+        width: 1200px;
+        height: auto;
+    }
+    table {
+        width: 100%;
+    }
+    .column{
+        font: normal normal bold 12px/19px Roboto;
+    }
+    .data{
+        font: normal normal normal 12px/19px Roboto;
+        height: 60px;
+    }
+    .btn-prov{
+        width: 80px;
+        height: 22px;
+    }
+    .footer{
+        width: 100%;
+        height: 60px;
+    }
+    .form-search{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 340px;
+        height: 35px;
+    }
+    ::ng-deep .mat-paginator-range-actions{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 740px;
+        left: 650px;
+        width: 200px;
+        height: 35px;
+    }
+    .form-select{
+        top: 745px;
+        left: 953px;
+        width: 200px;
+        height: 35px;
+        font: normal normal medium 14px/9px Roboto;
+    }
+    ::ng-deep .mat-paginator-page-size{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        width: 140px;
+        height: 35px;
+    }
+    ::ng-deep .mat-paginator-range-actions{
+        width: 240px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 1200px){ 
+    .card{
+        font-size: 12px;
+        width: 1000px;
+        height: auto;
+    }
+    .mat-paginator{
+        font-family: 'Roboto Regular', sans-serif;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 500px;
+    }
+    .footer{
+        width: 100%;
+        height: 60px;
+    }
+    .form-search{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 300px;
+        height: 35px;
+    }
+    .form-select{
+        top: 745px;
+        left: 953px;
+        width: 170px;
+        height: 35px;
+        font: normal normal medium 14px/9px Roboto;
+    }
+    ::ng-deep .mat-paginator-page-size{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        width: 140px;
+        height: 35px;
+    }
+    ::ng-deep .mat-paginator-range-actions{
+        width: 240px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 1050px){ 
+    .card{
+        font-size: 12px;
+        width: 900px;
+        height: auto;
+    }
+    .mat-paginator{
+        font-family: 'Roboto Regular', sans-serif;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 450px;
+    }
+    .footer{
+        width: 100%;
+        height: 60px;
+    }
+    .form-search{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 260px;
+        height: 35px;
+    }
+    .form-select{
+        top: 745px;
+        left: 953px;
+        width: 150px;
+        height: 35px;
+        font: normal normal medium 14px/9px Roboto;
+    }
+    ::ng-deep .mat-paginator-page-size{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        width: 140px;
+        height: 35px;
+    }
+    ::ng-deep .mat-paginator-range-actions{
+        width: 220px;
+        height: 40px;
+    }
+}

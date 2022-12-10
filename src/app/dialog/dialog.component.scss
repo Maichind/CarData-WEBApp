@@ -1,0 +1,48 @@
+.addCar form {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.addCar mat-form-field + mat-form-field {
+    margin-left: 8px;
+}
+  
+.addCar mat-form-field {
+    width: 220px;
+}
+
+button{
+    margin-left: 8px;
+}
+
+.fa-solid{
+    font-size: 16px;
+}
+
+.action{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.check{
+    color: aliceblue;
+    background-color: rgb(44, 158, 224);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid rgb(44, 158, 224);
+}
+
+.cancel{
+    color: rgb(44, 158, 224);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid rgb(215, 225, 230);
+}

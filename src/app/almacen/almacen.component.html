@@ -1,0 +1,89 @@
+<div class="card">
+    <div style="margin-top: 5px; padding: 1px;">
+      <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource" matSort>
+  
+          <ng-container matColumnDef="-">
+            <th class="column" mat-header-cell *matHeaderCellDef mat-sort-header><input class="form-check-input" type="checkbox" id="check"></th>
+            <td class="data" mat-cell *matCellDef="let row"> <input class="form-check-input" type="checkbox" id="check"></td>
+          </ng-container>
+      
+          <ng-container matColumnDef="ID">
+            <th class="column" mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+            <td class="data" mat-cell *matCellDef="let row"> {{row.id}} </td>
+          </ng-container>
+      
+          <ng-container matColumnDef="Placa">
+            <th class="column" mat-header-cell *matHeaderCellDef mat-sort-header> Placa </th>
+            <td class="data" mat-cell *matCellDef="let row"> {{row.placa}} </td>
+          </ng-container>
+      
+          <ng-container matColumnDef="Marca">
+            <th class="column" mat-header-cell *matHeaderCellDef mat-sort-header> Marca </th>
+            <td class="data" mat-cell *matCellDef="let row"> {{row.marca}} </td>
+          </ng-container>
+      
+          <ng-container matColumnDef="Modelo">
+            <th class="column" mat-header-cell *matHeaderCellDef mat-sort-header> Modelo </th>
+            <td class="data" mat-cell *matCellDef="let row"> {{row.modelo}} </td>
+          </ng-container>
+  
+          <ng-container matColumnDef="Kilometraje">
+            <th class="column" mat-header-cell *matHeaderCellDef mat-sort-header> Kilometraje </th>
+            <td class="data" mat-cell *matCellDef="let row"> {{row.kilometraje}} </td>
+          </ng-container>
+      
+          <ng-container matColumnDef="Transmisión">
+            <th class="column" mat-header-cell *matHeaderCellDef mat-sort-header> Transmisión </th>
+            <td class="data" mat-cell *matCellDef="let row"> {{row.transmision}} </td>
+          </ng-container>
+      
+          <ng-container matColumnDef="Tipo">
+            <th class="column" mat-header-cell *matHeaderCellDef mat-sort-header> Tipo </th>
+            <td class="data" mat-cell *matCellDef="let row"> {{row.tipo}} </td>
+          </ng-container>
+      
+          <ng-container matColumnDef="Precio">
+            <th class="column" mat-header-cell *matHeaderCellDef mat-sort-header> Precio de compra </th>
+            <td class="data" mat-cell *matCellDef="let row"> {{row.precio}} </td>
+          </ng-container>
+  
+          <ng-container matColumnDef="Proviniencia">
+            <th class="column" mat-header-cell *matHeaderCellDef mat-sort-header> Proviniencia </th>
+            <td class="data" mat-cell *matCellDef="let row"> <button class="btn-prov">Nuevo  <i class="fa-solid fa-eye"></i></button> </td>
+          </ng-container>
+      
+          <ng-container matColumnDef="    ">
+            <th class="column" mat-header-cell *matHeaderCellDef mat-sort-header>  </th>
+            <td class="data" mat-cell *matCellDef="let row">
+              <button mat-icon-button class="mark" title="Add to sale" (click)="ventas(row)">
+                <mat-icon>local_offer</mat-icon>
+              </button>
+            </td>
+          </ng-container>
+      
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      
+          <tr class="mat-row" *matNoDataRow>
+            <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  <mat-card class="footer">
+    <button class="form-search">
+      <mat-form-field appearance="standard" style="margin-left: 5px;">
+        <mat-label>Busqueda por coincidencia</mat-label>
+        <input matInput (keyup)="applyFilter($event)" placeholder="" #input>
+      </mat-form-field>
+      <i class="btn-search fas fa-search"></i>
+    </button>
+    <mat-paginator style="align-items: center;" [pageSizeOptions]="[5, 10]" [pageSize]="10"></mat-paginator>
+    <button mat-icon-button class="form-select " type="button" >
+      <mat-icon>car_rental </mat-icon>
+      <a> Almacenamiento</a> 
+    </button>
+  </mat-card>

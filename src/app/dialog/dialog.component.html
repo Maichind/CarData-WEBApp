@@ -1,0 +1,56 @@
+<div class="addCar">
+    <h1 mat-dialog-title>Add Car Data</h1>
+    <form [formGroup]="carForm">
+        <div mat-dialog-content>
+            <mat-form-field appearance="fill">
+                <mat-label>ID</mat-label>
+                <input formControlName="id" matInput>
+            </mat-form-field><br>
+            <mat-form-field appearance="fill">
+                <mat-label>Placa</mat-label>
+                <input formControlName="placa" matInput>
+            </mat-form-field><br>
+            <mat-form-field appearance="fill">
+                <mat-label>Marca</mat-label>
+                <input formControlName="marca" matInput>
+            </mat-form-field><br>
+            <mat-form-field appearance="fill">
+                <mat-label>Modelo</mat-label>
+                <input formControlName="modelo" matInput>
+            </mat-form-field><br>
+            <mat-form-field appearance="fill">
+                <mat-label>Kilometraje</mat-label>
+                <input formControlName="kilometraje" matInput>
+            </mat-form-field><br>
+            <mat-form-field appearance="fill">
+                <mat-label>Transmisión</mat-label>
+                <mat-select formControlName="transmision">
+                    <mat-option value="Mecánica">Mecánica</mat-option>
+                    <mat-option value="Automática">Automática</mat-option>
+                </mat-select>
+            </mat-form-field><br>
+            <mat-form-field appearance="fill">
+                <mat-label>Tipo</mat-label>
+                <mat-select formControlName="tipo">
+                    <mat-option value="Automovil">Automovil</mat-option>
+                    <mat-option value="Camioneta">Camioneta</mat-option>
+                    <mat-option value="SVG's">SVG's</mat-option>
+                </mat-select>
+            </mat-form-field><br><br>
+            <mat-form-field appearance="fill">
+                <mat-label>Precio de compra</mat-label>
+                <input formControlName="precio" matInput>
+            </mat-form-field><br>
+        </div>
+        <div class="action" mat-dialog-action>
+            <button class="cancel" mat-button mat-dialog-close >
+                <a>Cancel</a>  
+                <mat-icon>cancel </mat-icon>
+            </button>
+            <button class="check" mat-raised-button color="primary" (click)="addCar()">
+                <a>{{actionButton}} </a> 
+                <mat-icon> check </mat-icon>
+            </button>
+        </div>
+    </form>
+</div>
