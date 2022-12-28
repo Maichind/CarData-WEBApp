@@ -1,7 +1,11 @@
 # WCMind
 
 Deployed: https://mind-cardata.netlify.app/   
+<<<<<<< HEAD
 API: https://github.com/Maichind/APICarsData
+=======
+API: https://github.com/Maichind/APICarsData   
+>>>>>>> f83c75111015273a2358b0a01cb3e851ad854d82
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
 
